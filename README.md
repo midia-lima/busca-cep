@@ -16,7 +16,7 @@
 <p>Para clonar o repósitorio, você deve abrir o <b>terminal</b> ou <b>git bash</b> na pasta que deseja adicionar o projeto. Após isso execute a linha de comando:</p>
 
 ```shell
-git clone https://github.com/midia-lima/ProjetoMarvel.git
+git clone https://github.com/midia-lima/busca-cep.git
 ```
 
 <h2>:open_file_folder: Abrindo os Arquivos</h2>
