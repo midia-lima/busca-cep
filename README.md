@@ -1,6 +1,4 @@
 <h1 align="center">BUSCA CEP</h1>
-<img src="img/logo.jpg" align="center"><br>
-
 <p align="center"><img src="https://img.shields.io/badge/Made%20By-Midi%C3%A3%20Lima-blueviolet?link=http://left&link="https://www.linkedin.com/in/midia-lima/right"></p><br>
 
 <h2>:clipboard: Descrição</h2>
@@ -25,8 +23,6 @@ Response
     "siafi": "7107"
 }
 ```
- 
-
 
 <h2>:sheep: Clonando o Repósitorio</h2>
 <p>Para clonar o repósitorio, você deve abrir o <b>terminal</b> ou <b>git bash</b> na pasta que deseja adicionar o projeto. Após isso execute a linha de comando:</p>
