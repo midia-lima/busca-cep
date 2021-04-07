@@ -5,7 +5,7 @@
 <p>Aplicação que retorna o Endereço a partir de um CEP</p>
 
 <h2>:computer:Tecnologias</h2>
-<p>API utilizada URL: viacep.com.br/ws/01001000/json/<p>
+<p>API utilizada URL: https://viacep.com.br/ws/01001000/json/<p>
 <p>método GET</p>
 
 ```shell
