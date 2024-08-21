@@ -1,7 +1,10 @@
 var input = document.querySelector('input[name="cep"]');
+
 const button = document.querySelector('#btn');
 const result = document.querySelector('.infos');
-$("#input").mask("00000-000");
+const mensagemErro = document.getElementById('mensagemErro');
+
+$("#input").mask("00000000");
 
 function limpaCampo() {
     document.getElementById('input').value = ("");
@@ -21,17 +24,22 @@ button.addEventListener('click', async event => {
 
     console.log(input.value);
 
-    if (input.value == "") {
-        alert("Digite o CEP")
-        limpaRetornoEndereco()
+    const regex = /^\d{8}$/;
+
+    if (!regex.test(input.value)) {
+        mensagemErro.textContent = 'O campo deve conter 8 dígitos.';        
         return
-    }
-    if (input.value == "00000-000" || input.value == "12345-678") {
+    }   
+
+    if (input.value == "00000000" || input.value == "12345678") {
         alert("Formato de CEP inválido")
         limpaCampo()
         limpaRetornoEndereco()
         return
-    } else {
+    }
+
+    else {
+        mensagemErro.textContent = '';
 
         const response = await fetch(`https://viacep.com.br/ws/${input.value}/json/`);
         const { localidade, uf, bairro, logradouro } = await response.json();
